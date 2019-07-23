@@ -1,10 +1,10 @@
-/* This is going to be used for any modified/custom styling */
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
 */
-@import url("https://fonts.googleapis.com/css?family=Montserrat:400,900&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Raleway:400,900&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,900&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:600,700&display=swap");
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -55,35 +55,39 @@ table {
   border-spacing: 0;
 }
 
-* {
-  margin: 0;
-  padding: 0;
+.navigation {
+  position: fixed;
+  height: 80px;
+  width: 100%;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.65);
+  font-family: "Raleway", sans-serif;
+  z-index: 2;
 }
 
-.navigation {
+.navigation__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 100px;
-  background-color: rgba(0, 0, 0, 0.65);
-  font-family: "Raleway", sans-serif;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1170px;
 }
 
 .navigation__logo {
   color: #fff;
   font-weight: 900;
-  font-size: 1.5em;
+  font-size: 1.3em;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  margin-left: 5%;
 }
 
 .navigation__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 100px;
+  height: 80px;
   width: 100%;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
@@ -99,24 +103,158 @@ table {
 }
 
 .navigation__list__item:nth-child(2) {
-  padding-left: 25px;
+  padding-left: 34px;
 }
 
 .navigation__list__item:nth-child(3) {
-  padding: 0 25px;
-  border-right: 1px solid white;
-  margin-right: 5%;
+  padding: 0 34px;
 }
 
 .navigation__list--link {
   color: #fff;
   text-decoration: none;
-  font-weight: 900;
+  font-weight: 600;
   font-size: 16px;
 }
 
 .navigation__list--link:hover {
   text-decoration: none;
-  color: greenyellow;
+  color: #1ED760;
+}
+
+.slider {
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+  width: 100vw;
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  -webkit-transition: opacity 0.4s ease-in-out;
+  transition: opacity 0.4s ease-in-out;
+}
+
+.slide:first-child {
+  background: url("/assets/images/hero6.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.slide:nth-child(2) {
+  background: url("/assets/images/hero5.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.slide:last-child {
+  background: url("/assets/images/hero3.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.slide.current {
+  opacity: 1;
+}
+
+.buttons button {
+  border: 2px solid #fff;
+  background-color: transparent;
+  color: #fff;
+  cursor: pointer;
+  padding: 13px 15px;
+  border-radius: 50%;
+  outline: none;
+  z-index: 3;
+}
+
+.buttons button:hover {
+  background-color: #fff;
+  color: #333;
+}
+
+.arrow-next {
+  position: absolute;
+  top: 40%;
+  right: 15px;
+}
+
+.arrow-previous {
+  position: absolute;
+  top: 40%;
+  left: 15px;
+}
+
+body {
+  width: 100%;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  top: 0;
+  height: 100vh;
+  width: 100%;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+}
+
+.header__title {
+  color: #fff;
+  font-size: 3.5em;
+  letter-spacing: -2px;
+  font-weight: 700;
+  margin-bottom: 2%;
+}
+
+.header__subtitle {
+  color: #fff;
+  margin-bottom: 2%;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.header__button {
+  color: #fff;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 600;
+  text-decoration: none;
+  background-color: #1DB954;
+  padding: 16px 48px 18px;
+  border-radius: 500px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.header__button:hover {
+  background-color: #1ED760;
+}
+
+.filler {
+  height: 1000px;
 }
 /*# sourceMappingURL=index.css.map */
