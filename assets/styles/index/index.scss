@@ -1,6 +1,7 @@
 @import '../_partials/reset';
 @import '../_partials/navigation';
 @import '../_partials/slider';
+@import '../_partials/grid';
 
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,900&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Montserrat:600,700&display=swap');
@@ -50,10 +51,32 @@ body {
         width: fit-content;
         align-self: center;
         transition: .3s;
+        z-index: 4;
 
         &:hover {
             background-color: #1ED760;
         }
+    }
+}
+
+.section__one {
+    text-align: center;
+    margin-top: 5%;
+    font-family: $font-stack;
+
+    &__title {
+        color: #000;
+        font-size: 3.5em;
+        letter-spacing: -2px;
+        font-weight: 700;
+        margin-bottom: 1%;
+    }
+
+    &__description {
+        color: #1DB954;
+        margin-bottom: 2%;
+        font-size: 16px;
+        font-weight: 600;
     }
 }
 

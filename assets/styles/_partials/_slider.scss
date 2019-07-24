@@ -23,23 +23,35 @@ $image-overlay: linear-gradient(rgba(0, 0, 0, 0.25));
     transition: opacity 0.4s ease-in-out;
 
     &:first-child {
-        background:$image-overlay , url('/assets/images/hero6.jpg');
+        background:$image-overlay , url('/assets/images/image1.jpg');
         @include slider-image();
     }
 
     &:nth-child(2) {
-        background: $image-overlay , url('/assets/images/hero5.jpg');
+        background: $image-overlay , url('/assets/images/image2.jpg');
         @include slider-image();
     }
 
     &:last-child {
-        background: $image-overlay , url('/assets/images/hero3.jpg');
+        background: $image-overlay , url('/assets/images/image3.jpg');
         @include slider-image();
     }
   }
   
   .slide.current {
     opacity: 1;
+  }
+
+  .buttons {
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    position: absolute;
+    left: 50%;
+    top: 43%;
+    transform: translate(-50%, -50%);
+    width: 1170px;
   }
 
   .buttons button {
@@ -56,17 +68,4 @@ $image-overlay: linear-gradient(rgba(0, 0, 0, 0.25));
   .buttons button:hover {
     background-color: #fff;
     color: #333;
-  }
-  
-  .arrow-next {
-    position: absolute;
-    top: 40%;
-    right: 15px;
-  }
-  
-  .arrow-previous {
-    position: absolute;
-    top: 40%;
-    left: 15px;
-  }
-  
+  }  
