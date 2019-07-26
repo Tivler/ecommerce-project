@@ -1,0 +1,22 @@
+@import './partials/variables';
+@import './partials/mixins';
+@import './partials/navbar';
+@import './partials/masthead';
+@import './partials/buttons';
+@import './partials/about';
+@import './partials/projects';
+@import './partials/signup';
+@import './partials/contact';
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:600,700&display=swap');
+
+$font-stack: 'Montserrat' , sans-serif;
+
+body {
+  font-family: $font-stack;
+}
+
+footer {
+  padding: 5rem 0;
+}
