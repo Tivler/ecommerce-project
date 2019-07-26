@@ -1,0 +1,103 @@
+@import './fonts';
+
+.contact__section {
+    text-align: center;
+    font-family: 'Montserrat' , sans-serif;
+
+    &:nth-child(2) {
+        padding: 0px 12%;
+    }
+
+    &--wrapper {
+        color: #fff;
+        background-color:#1DB954;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding: 4% 25%;
+        margin-top: 40px;
+
+        @media only screen and (max-width: 915px) {
+            padding: 5% 25%;
+         }
+
+         @media only screen and (max-width: 600px) {
+            margin-top: 0;
+            padding: 7% 25%;
+         }
+    }
+
+    &__heading {
+        font-size: 2em;
+        font-weight: 700;
+        margin-bottom: 2%;      
+
+        @media only screen and (max-width: 1440px) and (max-height: 1400px) {
+            font-size: 1.7em;  
+        }
+
+        @media only screen and (max-width: 475px) {
+            font-size: 1.4em;
+        }
+
+        @media only screen and (max-width: 325px) {
+            font-size: 1em;
+        }
+    }
+}
+
+.footer {
+    padding: 5% 0;
+    background-color: #000;
+    color: #fff;
+    font-family: 'Montserrat';
+
+    @media only screen and (max-width: 1100px) {
+        padding: 5% 0;
+    }
+
+    &__nav {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+
+        &__list {
+            list-style: none;
+
+            &--item {
+                color: #fff;
+                text-decoration: none;
+                text-align: center;
+                font-weight: 600;
+                font-size: 16px;
+            }
+        }
+    }
+
+    &__icons {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 2%;
+
+        &--icon {
+            color: #1DB954;
+            font-size: 1.5em;
+            margin-top: 20px;
+
+            &:hover {
+               color: #1ED760;
+            }
+        }
+    }
+}
+
+
+.fa-instagram {
+    padding: 0 8px;
+}
+
+.copyright {
+    text-align: center;
+    font-size: 65%;
+    opacity: 0.7;
+}
