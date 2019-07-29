@@ -393,7 +393,7 @@ table {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 3% 0;
+  margin: 1% 0;
 }
 
 .form {
@@ -420,7 +420,7 @@ table {
 
 @media only screen and (max-width: 1440px) and (max-height: 1400px) {
   .form {
-    margin: 7% 0;
+    margin: 6% 0;
     width: 22em;
   }
 }
