@@ -154,12 +154,10 @@
 }
 
 .post1 {
-    background: url('/assets/images/albums/1.png');
     @include album-image();
 }
 
 .post2 {
-    background: url('/assets/images/albums/2.jpg');
     @include album-image();
 }
 
