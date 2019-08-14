@@ -4,7 +4,7 @@
     background-repeat: no-repeat;
 }
 
-.album {
+.featured {
     margin: 5% 17% 10%;   
     font-family: "Montserrat" , sans-serif; 
     text-align: center;
@@ -196,32 +196,32 @@
     }
 }
 
-.one {
+.One {
     background: url(/images/albums/drake.jpg);
     @include album-image();
 }
 
-.two {
+.Two {
     background: url(/images/albums/rodwave.jpg);
     @include album-image();
 }
 
-.three {
+.Three {
     background: url(/images/albums/teegrizzley.jpg);
     @include album-image();
 }
 
-.four {
+.Four {
     background: url(/images/albums/6.jpg);
     @include album-image();
 }
 
-.five {
+.Five {
     background: url(/images/albums/7.jpg);
     @include album-image();
 }
 
-.six {
+.Six {
     background: url(/images/albums/8.jpg);
     @include album-image();
 }
