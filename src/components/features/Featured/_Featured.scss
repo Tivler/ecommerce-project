@@ -5,10 +5,9 @@
 }
 
 .album {
-    margin: 3% 17% 10%;   
+    margin: 5% 17% 10%;   
     font-family: "Montserrat" , sans-serif; 
     text-align: center;
-    margin-top: 10%;
     font-family: 'Montserrat' , sans-serif;
 
     @media only screen and (min-width: 2600px) {
@@ -23,10 +22,6 @@
         margin-top: 10%;
     }
 
-    @media only screen and (max-width: 770px) {
-        margin-top: 20%;
-    }
-
     @media only screen and (max-width: 525px) {
         margin: 12% 0 0;
     }
@@ -38,13 +33,13 @@
         font-weight: 700;
         margin-bottom: 1%;
 
-        @media only screen and (max-width: 770px) {
-           font-size: 2em;
+        @media only screen and (max-width: 915px) {
+            font-size: 2.9em;
         }
 
-        @media only screen and (max-width: 525px) {
-            font-size: 1.8em;
-          }
+        @media only screen and (max-width: 750px) {
+            font-size: 2.2em;
+        }
     }
 
     &__description {
@@ -82,7 +77,7 @@
         }
 
         @media only screen and (max-width: 500px) {
-            grid-template-columns: 400px;
+            grid-template-columns: 300px;
         }
 
         &--link {
@@ -101,7 +96,11 @@
             }
 
             @media only screen and (max-width: 500px) {
-                min-width: 400px;
+                min-width: 300px;
+            }
+
+            @media only screen and (max-width: 400px) {
+                min-width: 250px;
             }
 
             &:hover {
