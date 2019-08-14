@@ -1,47 +1,11 @@
-.contact__section {
-    text-align: center;
-    font-family: 'Montserrat' , sans-serif;
 
-    &:nth-child(2) {
-        padding: 0px 12%;
-    }
+.contact--icon {
+    color: #fff;
+    font-size: 1.5em;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
 
-    &--wrapper {
-        color: #fff;
-        background-color:#1DB954;
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        padding: 4% 25%;
-        margin-top: 40px;
-
-        @media only screen and (max-width: 915px) {
-            padding: 5% 25%;
-         }
-
-         @media only screen and (max-width: 600px) {
-            margin-top: 0;
-            padding: 7% 25%;
-         }
-    }
-
-    &__heading {
-        font-size: 2em;
-        font-weight: 700;
-        margin-bottom: 2%;      
-
-        @media only screen and (max-width: 1440px) and (max-height: 1400px) {
-            font-size: 1.7em;  
-        }
-
-        @media only screen and (max-width: 475px) {
-            font-size: 1.4em;
-        }
-
-        @media only screen and (max-width: 325px) {
-            font-size: 1em;
-        }
-    }
 }
 
 .footer {
@@ -54,48 +18,86 @@
         padding: 5% 0;
     }
 
-    &__nav {
+    &__heading {
+        text-align: center;
+        font-size: 1.2em;
+        font-weight: 700;
+        margin-bottom: 3%;      
+
+        @media only screen and (max-width: 1440px) and (max-height: 1400px) {
+            font-size: 1.4em;  
+        }
+
+        @media only screen and (max-width: 475px) {
+            font-size: 1.1em;
+        }
+
+        @media only screen and (max-width: 325px) {
+            font-size: 1em;
+        }
+    }
+
+    &__socials {
         display: flex;
         justify-content: center;
         text-align: center;
+        margin: 0 0 25px 0;
 
-        &__list {
-            list-style: none;
-
-            &--item {
+            &__icon {
                 color: #fff;
                 text-decoration: none;
                 text-align: center;
                 font-weight: 600;
                 font-size: 16px;
+
+                &--size {
+                    font-size: 1.7em;
+                    color: #1DB954;
+                }
             }
         }
-    }
 
-    &__icons {
+
+    &__info {
         display: flex;
         justify-content: center;
-        margin-bottom: 2%;
 
-        &--icon {
-            color: #1DB954;
-            font-size: 1.5em;
-            margin-top: 20px;
+        &__icon {
+            color: #fff;
+            font-size: 1.2em;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
 
-            &:hover {
-               color: #1ED760;
+            &--size {
+                font-size: .5em;
+                color: #1DB954;
             }
         }
     }
 }
 
+.label {
+    color: #fff;
+    font-size: .5em;
+    padding: 5px;
+}
 
-.fa-instagram {
-    padding: 0 8px;
+.divider {
+    margin: 0 20px;
 }
 
 .copyright {
-    text-align: center;
-    font-size: 65%;
-    opacity: 0.7;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    &__text {
+        padding: 2em 10em;
+        border-top: 1px solid rgba(255, 255, 255, 0.25);
+        width: 30%;
+        text-align: center;
+        font-size: 55%;
+        opacity: 0.7;
+    }
 }
