@@ -1,6 +1,7 @@
 import React from 'react';
 import Albums from '../../Albums';
 import './_Grid.scss';
+import GridHead from './GridHead';
 
 class Grid extends React.Component {
     render () {
@@ -11,8 +12,9 @@ class Grid extends React.Component {
         });
 
         return (
+
         <>
-        <div className="background-image"></div>
+<GridHead />
 
         <div className="album">
             <h2 className="album__title">Discover Your Sound</h2>
