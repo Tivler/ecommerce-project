@@ -5,6 +5,7 @@ import Featured from './components/features/Featured/Featured';
 import albums from './albums'
 import featured from './featured';
 import Footer from './components/core/Footer/Footer';
+import Quotes from './components/features/Quotes/Quotes';
 
 class App extends React.Component {
   constructor(props) {
@@ -21,6 +22,7 @@ class App extends React.Component {
         <Navbar />
         <Slider />
         <Featured albums={this.state.featured} />
+        <Quotes />
         <Footer />
       </div>
     );
