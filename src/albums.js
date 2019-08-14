@@ -13,4 +13,4 @@ const albums = [
     { id: 12, cover: "/src/albums/12.jpg", title: "Until Death Call My Name", artist: "YoungBoy Never Broke Again", price: 13.99}
 ]
 
-export default albums
+export default albums;
