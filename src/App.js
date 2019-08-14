@@ -1,20 +1,13 @@
 import React from 'react';
-import Products from './components/Products/Products'
-import albums from './albums'
-import './albums'
+import Navbar from './components/Navbar/Navbar';
+import Slider from './components/Slider/Slider';
 
 class App extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      albums,
-    }  
-  }
-
   render () {
     return (
       <div className="App">
-        <Products albums={this.state.albums}/>
+        <Navbar />
+        <Slider />
       </div>
     );
   }
