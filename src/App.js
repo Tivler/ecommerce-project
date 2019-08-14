@@ -1,9 +1,10 @@
 import React from 'react';
-import Navbar from './components/Navbar/Navbar';
-import Slider from './components/Slider/Slider';
-import Featured from './components/Featured/Featured';
+import Navbar from './components/core/Navbar/Navbar';
+import Slider from './components/features/Slider/Slider';
+import Featured from './components/features/Featured/Featured';
 import albums from './albums'
 import featured from './featured';
+import Footer from './components/core/Footer/Footer';
 
 class App extends React.Component {
   constructor(props) {
@@ -20,6 +21,7 @@ class App extends React.Component {
         <Navbar />
         <Slider />
         <Featured albums={this.state.featured} />
+        <Footer />
       </div>
     );
   }
