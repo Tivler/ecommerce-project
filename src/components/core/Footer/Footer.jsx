@@ -24,7 +24,7 @@ const Footer = () => {
             <nav className="footer__nav">
                 <div className="footer__info">
                     <a className="footer__info__icon" href="https://www.linkedin.com/in/thomas-mckyer/"><FontAwesomeIcon className="footer__info__icon--size" icon={faPhoneAlt} /><span className="footer__info__label">(704) 808 8000</span></a>
-                    <a className="footer__info__icon divider" href="https://www.instagram.com/tmckyer/"><FontAwesomeIcon className="footer__info__icon--size" icon={faEnvelope} /><span className="footer__info__label">information@slotify.io</span></a>
+                    <a className="footer__info__icon footer__info__icon--divider" href="https://www.instagram.com/tmckyer/"><FontAwesomeIcon className="footer__info__icon--size" icon={faEnvelope} /><span className="footer__info__label">information@slotify.io</span></a>
                     <a className="footer__info__icon" href="https://github.com/tivler"><FontAwesomeIcon className="footer__info__icon--size" icon={faMapMarkerAlt} /><span className="footer__info__label">123 Somewhere Lit Drive, Charlotte, NC 28277</span></a>
                 </div>
             </nav>

@@ -18,12 +18,15 @@
             font-size: 1.4em;  
         }
 
-        @media only screen and (max-width: 475px) {
-            font-size: 1.1em;
+        @media only screen and (max-width: 600px) {
+            margin: 10px 0 20px 0;
         }
+    }
 
-        @media only screen and (max-width: 325px) {
-            font-size: 1em;
+    &__nav {
+        @media only screen and (max-width: 700px) {
+          justify-content: center;
+          display: flex;
         }
     }
 
@@ -32,6 +35,10 @@
         justify-content: center;
         text-align: center;
         margin: 0 0 35px 0;
+
+        @media only screen and (max-width: 600px) {
+            display: none;
+        }
 
             &__icon {
                 color: #fff;
@@ -61,6 +68,11 @@
         justify-content: center;
         margin-bottom: 25px;
 
+        @media only screen and (max-width: 700px) {
+            flex-direction: column;
+            align-content: center;
+        }
+
         &__icon {
             color: #fff;
             font-size: 1.2em;
@@ -68,9 +80,19 @@
             display: flex;
             align-items: center;
 
+            @media only screen and (max-width: 700px) {
+                margin: 0 auto;
+            }
+
             &--size {
                 font-size: .5em;
                 color: #1DB954;
+            }
+
+            &--divider {
+                @media only screen and (max-width: 700px) {
+                    margin: 0 auto;
+                }
             }
         }
 
