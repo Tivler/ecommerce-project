@@ -8,7 +8,7 @@
     top: 0;
     left: 0;
     color: #fff;
-    height: 90px;
+    height: 80px;
     width: 100%;
     z-index: 6;
     transition: .5s;
@@ -27,7 +27,7 @@
 
     &__logo {
         &--wrapper {
-            height: 90px;
+            height: 80px;
             margin-left: 14%;
             display: flex;
         }
@@ -58,7 +58,7 @@
             position: fixed;
             top: 0;
             right: 0;
-            height: 90px;
+            height: 80px;
             width: 100%;
             margin-right: 14%;
         }
@@ -67,8 +67,8 @@
             display: flex;
             align-items: center;
             justify-content: flex-end;
-            height: 90px;
-            font-size: .8em;
+            height: 80px;
+            font-size: .65em;
 
             &--item {
                 align-items: center;
