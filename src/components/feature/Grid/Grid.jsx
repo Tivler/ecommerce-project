@@ -14,7 +14,7 @@ class Grid extends React.Component {
         return (
 
         <>
-<GridHead />
+        <GridHead />
 
         <div className="album">
             <h2 className="album__title">Discover Your Sound</h2>
