@@ -1,13 +1,15 @@
 import React from 'react';
-import albums from './albums'
-import featured from './featured';
-import Navbar from './components/core/Navbar/Navbar';
-import Slider from './components/features/Slider/Slider';
-import Featured from './components/features/Featured/Featured';
-import Footer from './components/core/Footer/Footer';
-import Quotes from './components/features/Quotes/Quotes';
-// import Products from './components/features/Products/Products';
-// import Form from './components/features/Form/Form';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
+
+import albums from './albums';
+import featured from  './featured';
+
+import Navbar from './components/core/Navbar/Navbar'
+import Footer from './components/core/Footer/Footer'
+
+import Index from './pages/Index';
+import Products from './pages/Products';
+import Contact from './pages/Contact';
 
 class App extends React.Component {
   constructor(props) {
@@ -20,13 +22,13 @@ class App extends React.Component {
 
   render () {
     return (
-      <div className="App">
-        <Navbar />
-        <Slider />
-        <Featured albums={this.state.featured} />
-        <Quotes />
-        <Footer />
-      </div>
+        <Router>
+            <Navbar />
+            <Route exact path="/" component={Index} />
+            <Route exact path="/products" component={Products} />
+            <Route exact path="/contacts" component={Contact} />
+            <Footer />
+        </Router>
     );
   }
 }

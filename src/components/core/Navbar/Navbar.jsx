@@ -1,6 +1,8 @@
 import React from 'react';
 import './_Navbar.scss';
 
+import { Link } from 'react-router-dom';
+
 const Navbar = () => {
     return (
 
@@ -21,9 +23,9 @@ const Navbar = () => {
 
         <div className="nav__list--wrapper">
             <ul className="nav__list__ul">
-                <li className="nav__list__ul--item"><a className="nav__list__ul--link active" href="/index.html">Home</a></li>
-                <li className="nav__list__ul--item"><a className="nav__list__ul--link" href="/albums.html">Albums</a></li>
-                <li className="nav__list__ul--item"><a className="nav__list__ul--link" href="/contact.html">Contact</a></li>
+                <li className="nav__list__ul--item"><Link className="nav__list__ul--link active" to="/">Home</Link></li>
+                <li className="nav__list__ul--item"><Link className="nav__list__ul--link" to="/products">Albums</Link></li>
+                <li className="nav__list__ul--item"><Link className="nav__list__ul--link" to="/contacts">Contact</Link></li>
             </ul>
         </div>
 
