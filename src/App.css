@@ -1,3 +1,5 @@
+@import './components//partials/_fonts.scss';
+
 body {
     background-color: #edeff0;
 }
