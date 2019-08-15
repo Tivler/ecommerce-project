@@ -5,17 +5,17 @@
 }
 
 .album {
-    margin: 9% 17% 10%;   
+    margin: 5% 17% 10%;   
     font-family: "Montserrat" , sans-serif; 
     text-align: center;
     font-family: 'Montserrat' , sans-serif;
 
     @media only screen and (min-width: 1760px) {
-        margin: 7% 10% 10%;
+        margin: 5% 10% 10%;
     }
 
     @media only screen and (min-width: 2600px) {
-        margin-top: 6%;
+        margin-top: 3%;
     }
 
     @media only screen and (max-width: 1450px) {
@@ -141,6 +141,7 @@
 
         &__heading {
             font-size: 1.1em;
+            padding: 40px 40px 0;
             align-self: center;
             margin-bottom: 0.438em;
 
@@ -310,6 +311,22 @@
     background: url(/images/albums/21.jpg);
     @include album-image();
 }
+
+.twenty-two {
+    background: url(/images/albums/22.jpg);
+    @include album-image();
+}
+
+.twenty-three {
+    background: url(/images/albums/23.jpg);
+    @include album-image();
+}
+
+.twenty-four {
+    background: url(/images/albums/24.jpg);
+    @include album-image();
+}
+
 
 span {
     color: #1ED760;

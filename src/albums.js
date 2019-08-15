@@ -19,7 +19,10 @@ const albums = [
     { id: 'eighteen', url:'https://soundcloud.com/officialnocap/sets/neighborhood-hero',  title: "Neighborhood Hero", artist: "NoCap", price: 9.99},
     { id: 'nineteen', url:'https://soundcloud.com/officialnocap/sets/the-backend-child',  title: "The Backend Child", artist: "NoCap", price: 9.99},
     { id: 'twenty', url:'https://soundcloud.com/yungeenace/sets/cant-speak-on-it',  title: "Can't Speak On It", artist: "Yungeen Ace", price: 13.99},
-    { id: 'twenty-one', url:'https://soundcloud.com/ynwmelly/sets/we-all-shine',  title: "We All Shine", artist: "YNW Melly", price: 14.99}
+    { id: 'twenty-one', url:'https://soundcloud.com/ynwmelly/sets/we-all-shine',  title: "We All Shine", artist: "YNW Melly", price: 14.99},
+    { id: 'twenty-two', url:'https://soundcloud.com/moneybagg-yo/sets/43va-heartless',  title: "43VA HEARTLESS", artist: "MoneyBagg Yo", price: 8.99},
+    { id: 'twenty-three', url:'https://soundcloud.com/liluzivert/sets/lil-uzi-vert-vs-the-world',  title: "LIL UZI VERT vs THE WORLD", artist: "Lil Uzi Vert", price: 14.99},
+    { id: 'twenty-four', url:'https://soundcloud.com/moneybagg-yo/sets/reset-46',  title: "RESET", artist: "MoneyBagg Yo", price: 14.99}
 ]
 
 export default albums;

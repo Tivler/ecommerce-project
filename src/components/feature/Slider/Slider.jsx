@@ -3,32 +3,32 @@ import './_Slider.scss';
 
 import { Link } from 'react-router-dom';
 
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-// import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
-// import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
 class Slider extends React.Component {
-    // nextSlide () {
-    //     const current = document.querySelector('.current');
-    //     current.classList.remove('current');
-    //     if (current.nextElementSibling) {
-    //       current.nextElementSibling.classList.add('current');
-    //     } else {
-    //       this.slides[0].classList.add('current');
-    //     }
-    //     setTimeout(() => current.classList.remove('current'));
-    // }
+    nextSlide () {
+        const current = document.querySelector('.current');
+        current.classList.remove('current');
+        if (current.nextElementSibling) {
+          current.nextElementSibling.classList.add('current');
+        } else {
+          this.slides.classList.add('current');
+        }
+        setTimeout(() => current.classList.remove('current'));
+    }
     
-    // prevSlide () {
-    //   const current = document.querySelector('.current');
-    //   current.classList.remove('current');
-    //   if (current.previousElementSibling) {
-    //     current.previousElementSibling.classList.add('current');
-    //   } else {
-    //     this.slides[this.slides.length - 1].classList.add('current');
-    //   }
-    //   setTimeout(() => current.classList.remove('current'));
-    // }
+    prevSlide () {
+      const current = document.querySelector('.current');
+      current.classList.remove('current');
+      if (current.previousElementSibling) {
+        current.previousElementSibling.classList.add('current');
+      } else {
+        this.slides.classList.add('current');
+      }
+      setTimeout(() => current.classList.remove('current'));
+    }
 
     render () {
         return (
@@ -58,14 +58,14 @@ class Slider extends React.Component {
                 </div>
             </div>
 
-            {/* <div class="slider__arrows--wrapper">
-                <button class="slider__arrows--mod arrow-previous" onClick={(e) => {
+            <div className="slider__arrows--wrapper">
+                <button className="slider__arrows--mod arrow-previous" onClick={(e) => {
                     this.prevSlide();
                 }}><FontAwesomeIcon icon={faArrowLeft} /></button>
-                <button class="slider__arrows--mod arrow-next" onClick={(e) => {
+                <button className="slider__arrows--mod arrow-next" onClick={(e) => {
                     this.nextSlide();
                 }}><FontAwesomeIcon icon={faArrowRight} /></button>
-            </div> */}
+            </div>
         </>
 
         )

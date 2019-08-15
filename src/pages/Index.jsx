@@ -13,8 +13,8 @@ class Index extends React.Component {
         <>
         <Slider />
         <Featured albums={featured} />
-        <Quotes />
         <Spotlight />
+        <Quotes />
         </>
     )
     }
