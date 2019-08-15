@@ -12,7 +12,7 @@ class Slider extends React.Component {
     render () {
         let index = 2;
 
-        const handleClick = (slide) =>{
+        const handleClick = (slide) => {
             if (slide === -1) {
                 let slide = document.querySelectorAll('.slider--wrapper')
                 slide[index].style.opacity = 0;
