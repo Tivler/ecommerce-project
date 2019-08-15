@@ -140,6 +140,10 @@
             background-color: #1ED760;
             border: 1px solid #1ED760;
         }
+
+        &:focus {
+            outline: none;
+        }
     }
 
     &__copyright {
