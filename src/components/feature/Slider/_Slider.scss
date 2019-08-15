@@ -40,6 +40,46 @@ $image-overlay: linear-gradient(rgba(0, 0, 0, 0.25));
             z-index: 1;
           }
       }
+
+      &:nth-child(2) {
+        background: url(/images/image2.jpg);
+        height: 100vh;
+        width: 100%;
+        @include slider-image();
+
+        &:before {
+          content: '';
+          display: block;
+          background-color: #000;
+          height: 100%;
+          left: 0;
+          opacity: 0.45;
+          position: absolute;
+          top: 0;
+          width: 100%;
+          z-index: 1;
+        }
+      }
+
+      &:last-child {
+        background: url(/images/image3.jpg);
+        height: 100vh;
+        width: 100%;
+        @include slider-image();
+
+        &:before {
+          content: '';
+          display: block;
+          background-color: #000;
+          height: 100%;
+          left: 0;
+          opacity: 0.45;
+          position: absolute;
+          top: 0;
+          width: 100%;
+          z-index: 1;
+        }
+      }
     }
 
     &__header {
@@ -154,6 +194,10 @@ $image-overlay: linear-gradient(rgba(0, 0, 0, 0.25));
     }
 }
   
-.slider--wrapper.current {
-  opacity: 1;
+.slider--wrapper {
+  opacity: 0;
+
+  &--current {
+    opacity: 1;
+  }
 }

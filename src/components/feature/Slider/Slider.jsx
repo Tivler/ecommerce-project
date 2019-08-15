@@ -8,40 +8,41 @@ import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
 class Slider extends React.Component {
-    nextSlide () {
-        const current = document.querySelector('.current');
-        current.classList.remove('current');
-        if (current.nextElementSibling) {
-          current.nextElementSibling.classList.add('current');
-        } else {
-          this.slides.classList.add('current');
-        }
-        setTimeout(() => current.classList.remove('current'));
-    }
-    
-    prevSlide () {
-      const current = document.querySelector('.current');
-      current.classList.remove('current');
-      if (current.previousElementSibling) {
-        current.previousElementSibling.classList.add('current');
-      } else {
-        this.slides.classList.add('current');
-      }
-      setTimeout(() => current.classList.remove('current'));
-    }
-
+   
     render () {
+        let index = 2;
+
+        const handleClick = (slide) =>{
+            if (slide === -1) {
+                let slide = document.querySelectorAll('.slider--wrapper')
+                slide[index].style.opacity = 0;
+                
+                if(index === 0) {
+                    index = 3
+                }
+
+            index--;
+            slide[index].style.opacity = 1;
+            
+            } else if (slide === 1) {
+                let slide = document.querySelectorAll('.slider--wrapper')
+                slide[index].style.opacity = 0;
+      
+      
+                if(index === 2) {
+                    index = -1
+                }
+
+            index++;
+            slide[index].style.opacity = 1;
+          }
+      
+        }
+        
         return (
 
         <>
             <div className="slider">
-                <div className="slider--wrapper current">
-                    <div className="slider__header">
-                        <h1 className="slider__header__title">A sound for everyone.</h1>
-                        <p className="slider__header__subtitle">Millions of songs, when you need to get away.</p>
-                        <Link className="slider__header__button" to="/products">View Albums</Link>
-                    </div>
-                </div>
                 
                 <div className="slider--wrapper">
                     <div className="slider__header">
@@ -56,15 +57,19 @@ class Slider extends React.Component {
                     <Link className="slider__header__button" to="/contacts">Subscribe</Link>
                     </div>
                 </div>
+
+                <div className="slider--wrapper slider--wrapper--current ">
+                    <div className="slider__header">
+                        <h1 className="slider__header__title">A sound for everyone.</h1>
+                        <p className="slider__header__subtitle">Millions of songs, when you need to get away.</p>
+                        <Link className="slider__header__button" to="/products">View Albums</Link>
+                    </div>
+                </div>
             </div>
 
             <div className="slider__arrows--wrapper">
-                <button className="slider__arrows--mod arrow-previous" onClick={(e) => {
-                    this.prevSlide();
-                }}><FontAwesomeIcon icon={faArrowLeft} /></button>
-                <button className="slider__arrows--mod arrow-next" onClick={(e) => {
-                    this.nextSlide();
-                }}><FontAwesomeIcon icon={faArrowRight} /></button>
+                <button className="slider__arrows--mod arrow-previous" onClick={() => handleClick(-1)}><FontAwesomeIcon icon={faArrowLeft} /></button>
+                <button className="slider__arrows--mod arrow-next" onClick={() => handleClick(1)}><FontAwesomeIcon icon={faArrowRight} /></button>
             </div>
         </>
 
