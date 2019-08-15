@@ -47,13 +47,13 @@ class Slider extends React.Component {
                 <div className="slider--wrapper">
                     <div className="slider__header">
                         <h1 className="slider__header__title">Find your own sound.</h1>
-                        <p className="slider__header__subtitle">Using slotify is a sure way to find a sound that fits you and your personality</p>
+                        <p className="slider__header__subtitle">Using Soundclout is a sure way to find a sound that fits you and your personality</p>
                     </div>
                 </div>
                 <div className="slider--wrapper">
                     <div className="slider__header">
                     <h1 className="slider__header__title">Stay connected</h1>
-                    <p className="slider__header__subtitle">Stay connected with Slotify by joining our newsletter</p>
+                    <p className="slider__header__subtitle">Stay connected with Soundclout by subscribing to our newsletter</p>
                     <Link className="slider__header__button" to="/contacts">Subscribe</Link>
                     </div>
                 </div>
