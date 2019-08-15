@@ -3,6 +3,7 @@ import './_Form.scss';
 import FormHead from './FormHead';
 
 const Form = () => {
+
     return (
         <>
         <FormHead />
@@ -17,7 +18,22 @@ const Form = () => {
                 <label htmlFor="inputEmail"></label>
                 <input type="email" id="inputEmail" className="form--control" placeholder="Email Address" required=""></input>
                 <textarea id="inputMessage" className="form--control" placeholder="Leave us a message!"></textarea>
-                <button className="form--button" id="submitButton" type="submit">Submit</button>
+
+                <button className="form--button" id="submitButton" type="submit" onClick={(e) => {
+                     const firstName = document.querySelector('#inputFirstName');
+                     const lastName = document.querySelector('#inputLastName');
+                     const email = document.querySelector('#inputEmail');
+                     const message = document.querySelector('#inputMessage');
+                     let empty = "";
+
+                     alert(`Thanks For Joining Our Community, ${firstName.value}!`);
+                     e.preventDefault();
+                     firstName.value = empty;
+                     lastName.value = empty;
+                     email.value = empty;
+                     message.value = empty;
+                }}>Submit</button>
+
                 <p className="form__copyright">© Slotify.io</p>
             </form>
         </div>
