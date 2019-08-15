@@ -10,7 +10,16 @@ const albums = [
     { id: 'nine', url:'https://soundcloud.com/lildurk/sets/just-cause-yall-waited-1',  title: "Just Cause Y'all Waited", artist: "Lil Durk", price: 9.99},
     { id: 'ten', url:'https://soundcloud.com/nba-youngboy/sets/realer',  title: "Realer", artist: "YoungBoy Never Broke Again", price: 13.99},
     { id: 'eleven', url:'https://soundcloud.com/tee-grizzley/sets/scriptures',  title: "Scriptures", artist: "Tee Grizzley", price: 11.99},
-    { id: 'twelve', url:'https://soundcloud.com/nba-youngboy/sets/until-death-call-my-name-1',  title: "Until Death Call My Name", artist: "YoungBoy Never Broke Again", price: 13.99}
+    { id: 'twelve', url:'https://soundcloud.com/nba-youngboy/sets/until-death-call-my-name-1',  title: "Until Death Call My Name", artist: "YoungBoy Never Broke Again", price: 13.99},
+    { id: 'thirteen', url:'',  title: "Until Death Call My Name", artist: "YoungBoy Never Broke Again", price: 13.99},
+    { id: 'fourteen', url:'',  title: "Until Death Call My Name", artist: "YoungBoy Never Broke Again", price: 13.99},
+    { id: 'fifteen', url:'',  title: "Until Death Call My Name", artist: "YoungBoy Never Broke Again", price: 13.99},
+    { id: 'sixteen', url:'',  title: "Until Death Call My Name", artist: "YoungBoy Never Broke Again", price: 13.99},
+    { id: 'seventeen', url:'',  title: "Until Death Call My Name", artist: "YoungBoy Never Broke Again", price: 13.99},
+    { id: 'eighteen', url:'',  title: "Until Death Call My Name", artist: "YoungBoy Never Broke Again", price: 13.99},
+    { id: 'nineteen', url:'',  title: "Until Death Call My Name", artist: "YoungBoy Never Broke Again", price: 13.99},
+    { id: 'twenty', url:'',  title: "Until Death Call My Name", artist: "YoungBoy Never Broke Again", price: 13.99},
+    { id: 'twenty-one', url:'',  title: "Until Death Call My Name", artist: "YoungBoy Never Broke Again", price: 13.99}
 ]
 
 export default albums;
