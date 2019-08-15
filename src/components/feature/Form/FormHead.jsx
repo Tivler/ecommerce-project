@@ -3,10 +3,18 @@ import './_Form.scss';
 
 const FormHead = () => {
     return (
-    <header class="header">
-        <h2 class="header__title">Never miss a beat</h2>
-        <p class="header__description">Subscribe to Slotify today</p>
-    </header>
+        <>
+        <div className="background-image"></div>
+
+        <div className="content">
+            <div className="content--wrapper">
+                <div className="content__header">
+                    <h1 className="content__header__title">Join Our Community</h1>
+                    <p className="content__header__subtitle">Subscribe to stay connected, Never miss a beat!</p>
+                </div>
+            </div>
+        </div>
+        </>
     )
 }
 

@@ -50,7 +50,7 @@
 .form__wrapper {
     display: flex;
     justify-content: center;
-    margin: 1% 0;
+    margin: 5% 0;
  }
  
  .form {
@@ -59,12 +59,13 @@
      text-align: center;
      padding: 50px 100px 100px 100px;
      justify-content: center;
-     border-radius: 5px;
+     border-radius: 7px;
      width: 25em;
      background: #fff;
      font-family: 'Montserrat' , sans-serif;
      margin-bottom: 5%;
-     box-shadow: -2px 2px 40px 0 rgba(0, 0, 0, 0.4);
+     box-shadow: 0 2px 0 rgba(0,0,0,0.1);
+
 
       
     @media only screen and (max-width: 1440px) and (max-height: 1400px) {   
@@ -99,7 +100,7 @@
         font-weight: 700;
         font-size: 1.5em;
         line-height: 1.5;
-        color: #484141;
+        color: #000;
         margin-top: 2px;
 
          
@@ -144,6 +145,7 @@
     &__copyright {
         margin-top: 40px;
         font-size: 65%;
+        color: #000;
     }
  }
  
