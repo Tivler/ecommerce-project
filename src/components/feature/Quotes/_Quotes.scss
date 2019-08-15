@@ -24,7 +24,7 @@
     &__title {
         font-size: 1.8em;
         font-weight: 700;
-        margin-bottom: 1%;      
+        margin-bottom: 4%;      
 
         @media only screen and (max-width: 1440px) and (max-height: 1400px) {
             font-size: 1.5em;  
@@ -40,8 +40,8 @@
     }
 
     &__content {
-        font-size: .95em;
-        margin-bottom: 2%;      
+        font-size: .75em;
+        margin-bottom: 4%;      
     }
 
     &__author {
