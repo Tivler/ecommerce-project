@@ -58,7 +58,7 @@
         grid-template-columns: 350px 350px 350px;
         grid-gap: 1.5em;
         justify-content: center;
-        margin-top: 3%;
+        margin-top: 5%;
         margin-bottom: 7%;
 
         @media only screen and (max-width: 1400px) {
@@ -231,10 +231,6 @@
 .Six {
     background: url(/images/albums/8.jpg);
     @include album-image();
-}
-
-span {
-    color: #1ED760;
 }
 
 .featured__wrapper--link:hover .featured__wrapper--overlay {

@@ -1,3 +1,8 @@
+@mixin color {
+    background: #f50;
+    background: linear-gradient(#f70,#f30);
+}
+
 .filter {
 
     &__title {
@@ -11,19 +16,19 @@
         text-transform: uppercase;
         font-weight: 600;
         text-decoration: none;
-        background-color: #1DB954;
         padding:14px 30px 15px;
         border-radius: 7px;
         width: fit-content;
         transition: .3s;
         margin-top: 1%;
+        @include color();
 
         &--divider {
             margin-right: 15px;
         }
 
         &:hover {
-            background-color: #1ED760;
+            @include color();
         }
 
         &:focus {

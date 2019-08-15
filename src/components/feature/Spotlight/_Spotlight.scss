@@ -218,7 +218,7 @@
             text-transform: uppercase;
             font-weight: 600;
             text-decoration: none;
-            background-color: #1DB954;
+            background-color: #f50;
             padding:16px 48px 18px;
             border-radius: 500px;
             width: fit-content;
@@ -236,10 +236,6 @@
 .post {
     background: url(/images/drake.png);
     @include album-image();
-}
-
-span {
-    color: #F50;
 }
 
 .featured__wrapper--link:hover .featured__wrapper--overlay {

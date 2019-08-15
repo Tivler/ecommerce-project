@@ -7,6 +7,10 @@ const Form = () => {
     return (
         <>
         <FormHead />
+        <div className="contact">
+            <h2 className="contact__title">Newsletter</h2>
+            <p className="contact__description">Recieve notifications when we post new albums</p>
+        </div>
 
         <div className="form__wrapper">
             <form className="form">
@@ -26,7 +30,7 @@ const Form = () => {
                      const message = document.querySelector('#inputMessage');
                      let empty = "";
 
-                     alert(`Thanks For Joining Our Community, ${firstName.value}!`);
+                     alert(`Thanks for joining our community, ${firstName.value}!`);
                      e.preventDefault();
                      firstName.value = empty;
                      lastName.value = empty;
@@ -34,7 +38,7 @@ const Form = () => {
                      message.value = empty;
                 }}>Submit</button>
 
-                <p className="form__copyright">© Slotify.io</p>
+                <p className="form__copyright">© Soundclout.io</p>
             </form>
         </div>
         </>

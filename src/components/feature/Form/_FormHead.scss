@@ -4,11 +4,16 @@
     background-repeat: no-repeat;
 }
 
+@mixin color {
+    background: #f50;
+    background: linear-gradient(#f70,#f30);
+}
+
 .background-image {
-    background: #1DB954;
     height: 60vh;
     width: 100%;
     @include slider-image();
+    @include color();
 }
 
 .content {

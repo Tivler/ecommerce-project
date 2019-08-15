@@ -7,7 +7,7 @@ const Spotlight = () => {
     return (
         <>
         <div className="spotlight__wrapper">
-             <Link className="spotlight__wrapper--link post" rel="noopener noreferrer" href="+" target="_blank">
+             <Link className="spotlight__wrapper--link post" rel="noopener noreferrer" to="/" target="_blank">
                 <div className="spotlight__wrapper--overlay">
                     <h3 className="spotlight_wrapper__heading">Views - Drake</h3>
                     <p className="spotlight__wrapper__description">Price <span>14.99</span></p>
