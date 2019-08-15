@@ -6,6 +6,11 @@ $image-overlay: linear-gradient(rgba(0, 0, 0, 0.25));
     background-repeat: no-repeat;
 }
 
+@mixin color {
+  background: #f50;
+  background: linear-gradient(#f70,#f30);
+}
+
 .slider {
     position: relative;
     overflow: hidden;
@@ -136,7 +141,7 @@ $image-overlay: linear-gradient(rgba(0, 0, 0, 0.25));
             text-transform: uppercase;
             font-weight: 600;
             text-decoration: none;
-            background-color: #1DB954;
+            @include color();
             padding:16px 48px 18px;
             border-radius: 500px;
             width: fit-content;

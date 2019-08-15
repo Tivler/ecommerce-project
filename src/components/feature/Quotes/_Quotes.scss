@@ -1,15 +1,20 @@
+@mixin color {
+    background: #f50;
+    background: linear-gradient(#f70,#f30);
+}
+
 .quote {
     text-align: center;
     font-family: 'Montserrat' , sans-serif;
 
     &--wrapper {
         color: #fff;
-        background-color:#1DB954;
         display: flex;
         justify-content: center;
         flex-direction: column;
         padding: 5% 25%;
         margin-top: 40px;
+        @include color();
 
         @media only screen and (max-width: 915px) {
             padding: 5% 25%;

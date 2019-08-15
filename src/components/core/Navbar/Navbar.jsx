@@ -18,7 +18,7 @@ const Navbar = () => {
         </div>
 
         <div className="nav__logo--wrapper">
-            <a href="https://github.com/Tivler" className="nav__logo__text">Slotify</a>
+            <a href="https://github.com/Tivler" className="nav__logo__text">SoundBloud</a>
         </div>
 
         <div className="nav__list--wrapper">

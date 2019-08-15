@@ -4,6 +4,11 @@
     background-repeat: no-repeat;
 }
 
+@mixin color {
+    background: #f50;
+    background: linear-gradient(#f70,#f30);
+}
+
 .spotlight {
     margin: 5% 17% 10%;   
     font-family: "Montserrat" , sans-serif; 
@@ -39,17 +44,6 @@
         @media only screen and (max-width: 750px) {
             font-size: 2.2em;
         }
-    }
-
-    &__description {
-        color: #1DB954;
-        margin-bottom: 2%;
-        font-size: 20px;
-        font-weight: 600;
-
-        @media only screen and (max-width: 5250px) {
-            font-size: 19px;
-          }
     }
 
     &__wrapper {
@@ -210,7 +204,7 @@
 
         &__artist {
             font-size: 2.5em;
-            color: #1DB954;
+            color: #F50;
             margin-bottom: 2%;
         }
 
@@ -245,7 +239,7 @@
 }
 
 span {
-    color: #1ED760;
+    color: #F50;
 }
 
 .featured__wrapper--link:hover .featured__wrapper--overlay {
