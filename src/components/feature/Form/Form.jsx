@@ -62,12 +62,12 @@ class Form extends React.Component {
         event.preventDefault();
         const isValid = this.validate();
         if (isValid) {
+            alert(`Thanks for joining our community, ${this.state.firstName}!`);
             console.log(this.state);
             this.setState(initialState);
             firstNameClass.style.display = 'none';
             lastNameClass.style.display = 'none';
             emailClass.style.display = 'none';
-
         }
     }
    
