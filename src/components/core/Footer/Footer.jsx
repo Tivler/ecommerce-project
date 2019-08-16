@@ -7,7 +7,7 @@ import { faPhoneAlt } from "@fortawesome/free-solid-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { faMapMarkerAlt } from "@fortawesome/free-solid-svg-icons";
 
-library.add(fab);
+    library.add(fab);
 
 const Footer = () => {
     return (
@@ -31,6 +31,7 @@ const Footer = () => {
 
             <div className="copyright">
                 <p className="copyright__text">Copyright &copy; 2019 Soundclout.io</p>
+                <p className="copyright__updated">Last updated August, 2019</p>
             </div>
         </footer>
     </>
