@@ -18,7 +18,7 @@ const Navbar = () => {
         </div>
 
         <div className="nav__logo--wrapper">
-            <a href="https://github.com/Tivler" className="nav__logo__text">Soundclout</a>
+            <Link to="/" className="nav__logo__text">Soundclout</Link>
         </div>
 
         <div className="nav__list--wrapper">

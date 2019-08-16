@@ -2,7 +2,7 @@ import React from 'react';
 
 import albums from '../../../albums';
 
-import AlbumCard from '../../AlbumCard';
+import AlbumCard from '../../layout/AlbumCard';
 import GridHead from './GridHead';
 
 import './_Grid.scss';

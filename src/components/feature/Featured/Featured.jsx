@@ -1,6 +1,6 @@
 import React from 'react';
 import './_Featured.scss';
-import Features from '../../Features';
+import Features from '../../layout/Features';
 
 class Featured extends React.Component {
     render () {
