@@ -185,3 +185,23 @@
      font-size: 13px;
      resize: none;
 }
+
+.error {
+    font-family: 'Montserrat' , sans-serif;
+    color: #F50;
+    font-size: 16px;
+    margin-bottom: 15px;
+    display: none;
+}
+
+.firstNameError {
+    display: none;
+}
+
+.lastNameError {
+    display: none;
+}
+
+.emailError {
+    display: none;
+}

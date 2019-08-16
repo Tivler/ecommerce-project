@@ -91,11 +91,6 @@
                 color: #fff;
                 text-decoration: none;
                 text-shadow: -1px 1px 2px #000;
-
-                &:hover {
-                    text-decoration: none;
-                    color: #f50;
-                }
             }
         }
     }
@@ -237,4 +232,8 @@
     .nav__logo__text {
         font-size: 1.3em;
     }
+}
+
+.active {
+    color: #f50;
 }

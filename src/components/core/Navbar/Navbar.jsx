@@ -1,6 +1,7 @@
 import React from 'react';
 import './_Navbar.scss';
 
+import { NavLink } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 
 const Navbar = () => {
@@ -13,7 +14,7 @@ const Navbar = () => {
             <label htmlFor="nav" className="nav__menu--button">
                 <i></i>
                 <i></i>
-                <i></i>
+                <i></i> 
             </label>
         </div>
 
@@ -23,9 +24,9 @@ const Navbar = () => {
 
         <div className="nav__list--wrapper">
             <ul className="nav__list__ul">
-                <li className="nav__list__ul--item"><Link className="nav__list__ul--link active" to="/">Home</Link></li>
-                <li className="nav__list__ul--item"><Link className="nav__list__ul--link" to="/products">Albums</Link></li>
-                <li className="nav__list__ul--item"><Link className="nav__list__ul--link" to="/contacts">Contact</Link></li>
+                <li className="nav__list__ul--item"><NavLink className="nav__list__ul--link" exact to="/">Home</NavLink></li>
+                <li className="nav__list__ul--item"><NavLink className="nav__list__ul--link" to="/products">Albums</NavLink></li>
+                <li className="nav__list__ul--item"><NavLink className="nav__list__ul--link" to="/contacts">Contact</NavLink></li>
             </ul>
         </div>
 
